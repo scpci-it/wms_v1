@@ -30,7 +30,7 @@
 			<label for="from">Location From:</label>
   			<select class="form-control" id="from" name="from">
   				@foreach($from_locations as $location)
-  					<option value="{{ $location->id }}">{{$location->warehouse->code}} / {{ $location->name }}</option>
+  					<option value="{{ $location->id }}">{{$location->warehouse->name}} / {{ $location->name }}</option>
   				@endforeach
   			</select>
 		</div>
@@ -39,7 +39,7 @@
 			<label for="to">Location To:</label>
   			<select class="form-control" id="to" name="to">
   				@foreach($to_locations as $location)
-  					<option value="{{ $location->id }}">{{$location->warehouse->code}} / {{ $location->name }}</option>
+  					<option value="{{ $location->id }}">{{$location->warehouse->name}} / {{ $location->name }}</option>
   				@endforeach
   			</select>
 		</div>
